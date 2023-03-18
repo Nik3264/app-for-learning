@@ -1,0 +1,149 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding-left: 2%;
+
+}
+
+:root {
+    --green: rgba(51, 131, 09, 0.75);
+    --light-green: rgba(201, 212, 108, 0.5);
+    --carrot: rgba(228, 135, 22, 1);
+    --light-carrot: rgba(250, 171, 1, 0.8);
+    --sand: rgba(223, 188, 178, 0.8);
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    min-height: calc(100vh - min(80px, 7vmax));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-evenly;
+    background-color: var(--light-green);
+  }
+  
+
+  .course-wrap {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5%;
+    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.75);
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .course-wrap * {
+    margin: 0;
+  }
+
+  .course-wrap:hover {
+    cursor: pointer;
+  }
+  
+  .course-wrap:active {
+    box-shadow:1px 3px 3px rgba(0, 0, 0, 0.5);
+  }
+
+  .course-header {
+    width: 100%;
+    height: 12%;
+    background-color: var(--green);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+  }
+  
+  .course-header h3 {
+    padding: 5px;
+    font-size: 1.1em;
+  }
+  
+  .course-img {
+    min-width: auto;
+    min-height: auto;
+    width: 100%;
+    padding: 5px;
+  }
+
+  .course-description {
+    padding: 10px;
+  }
+
+  .button-more, .go-to-main {
+    margin: 1em 0;
+    width: 98%;
+    font-size: 1.5em;
+    background-color:transparent;
+    border: none;
+  }
+
+  .button-more:hover, .go-to-main:hover {
+    cursor: pointer;
+    color:var(--green);
+  }
+
+  /* button - up*/
+
+  .btn-up {
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    background-color:var(--green);
+    /* расстояние от правого края окна браузера */
+    right: 20px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 0;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+  }
+  
+  .btn-up::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+  }
+  
+  .btn-up_hide {
+    display: none;
+  }
+  
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      background-color:#62c9c5;
+    }
+  }
+  /**/
