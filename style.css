@@ -7,11 +7,6 @@ body {
 * {
   box-sizing: border-box;
   font-family: 'Rubik', sans-serif;
-/*   font-family: 'Rubik Mono One', sans-serif; */
-}
-
-.header {
-  padding-left: 2%;  
 }
 
 :root {
@@ -24,8 +19,36 @@ body {
     --blue:#00a69a;
 }
 
+.header {
+  padding-left: 2%;  
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-description {
+  width: 80%;
+  padding-left: 2%;
+  color:var(--blue);
+}
+
+.locked-lessons {
+  padding-left: 2%;
+}
+
+.unlocked {
+  color:var(--orang);
+  cursor: pointer;
+}
+
+.lessons-list li {
+  padding: 5px;
+}
+
 .content {
     margin: 0 auto;
+    max-width: 1200px;
     width: 100%;
     min-height: calc(100vh - min(80px, 7vmax));
     display: flex;
@@ -33,7 +56,7 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: space-evenly;
-    background-color: rgba(201, 212, 108, 0.3);
+    background-color: rgba(201, 212, 108, 0.1);
   }
   
 
@@ -97,7 +120,7 @@ body {
     padding: 10px;
   }
 
-  .button-more, .go-to-main {
+  .button-more {
     margin: 1em 0;
     width: 98%;
     font-size: 1.5em;
@@ -105,9 +128,16 @@ body {
     border: none;
   }
 
-  .button-more:hover, .go-to-main:hover, .unlocked {
+  .button-more:hover, .go-to-main:hover {
     cursor: pointer;
     color:var(--green);
+  }
+
+  .go-to-main {
+    margin: 1em 0;
+    font-size: 1.5em;
+    background-color:transparent;
+    border: none;
   }
 
   /* button - up*/
@@ -147,6 +177,7 @@ body {
   }
   /**/
 .video-lesson {
+  padding: 2%;
   object-fit: scale-down;
   width: 600px;
   height: 400px;
@@ -219,4 +250,31 @@ body {
    color: var(--blue);
    content: '\2742' /*"•"*/;
    padding-right: 5px; 
+}
+
+@media screen and (max-width: 800px) {
+  .course-wrap {
+    width: 48%;
+  }
+  .h1 {
+    font-size: 1.6em;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .course-wrap {
+    width: 90%;
+  }
+  .video-lesson {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .video-lesson {
+    width: 280px;
+    height: 200px;
+  }
 }
