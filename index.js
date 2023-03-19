@@ -6,28 +6,60 @@ import renderPage from './src/page.js';
 //I have got the object from request and use it here,
 //becouse not all browsers works with this API
 
-const url =  'https://api.wisey.app/api/v1/core/preview-courses';//"http://api.wisey.app/api/v1/core/preview-courses";
+const url =  'https://api.wisey.app/api/v1/core/preview-courses';
 const url1 = "https://api.wisey.app/api/v1/auth/anonymous?platform=subscriptions";
+const urlId=url+'/3b77ceb6-fb43-4cf5-a25b-8fe9222a0714';
 
-const getResource = async (url) => {
+let arr;
+
+/* const getResource = async (url) => {
     const res = await fetch(url);
     return await res.json();
   };
 
-getResource(url1).then((data)=>{
+const getResUrl = async (urlAuth, urlRes) => {
+  return await getResource(urlAuth).then(data=>{
   let token=data.token;
   console.log(token);
-  fetch(url,{
+  fetch(urlRes,{
     method: "GET",
     headers:{
     'Content-type': 'application/json',
     'Authorization': `Bearer ${token}`
     }
   }).then((response)=>{
-    console.log(response);
-    return response;
+    return response.json();
+  }).then(data=>{
+    console.log('data  ',data);
+    return data;
   })
-  .catch(()=>{console.log('erRor')});
+  .catch(()=>console.log('erRor'));
+  });
+}; */
+
+/* getResUrl(url1,url).then(data=>{
+  arr =  data;
+  console.log('arr  ',arr);
+}); */
+
+const getResource = async (urlAuth, url) => {
+  let res = await fetch(urlAuth);
+  let token = await res.json();
+
+  let resData = await fetch(url,{
+    method: "GET",
+    headers:{
+    'Content-type': 'application/json',
+    'Authorization': `Bearer ${token.token}`
+    }
+  });
+  let data = await resData.json();
+  console.log(data);
+  return data;
+};
+
+getResource(url1,url).then((data)=>{
+  console.log('then data  ',data);
 });
 
 

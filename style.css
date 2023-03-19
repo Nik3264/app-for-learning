@@ -102,30 +102,18 @@ body {
   /* button - up*/
 
   .btn-up {
-    /* фиксированное позиционирование */
     position: fixed;
-    /* цвет фона */
     background-color:var(--green);
-    /* расстояние от правого края окна браузера */
     right: 20px;
-    /* расстояние от нижнего края окна браузера */
     bottom: 0;
-    /* скругление верхнего левого угла */
     border-top-left-radius: 8px;
-    /* скругление верхнего правого угла */
     border-top-right-radius: 8px;
-    /* вид курсора */
     cursor: pointer;
-    /* отображение элемента как flex */
     display: flex;
-    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
     align-items: center;
-    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
     justify-content: center;
-    /* ширина элемента */
-    width: 60px;
-    /* высота элемента */
-    height: 50px;
+    width: 50px;
+    height: 40px;
   }
   
   .btn-up::before {
@@ -147,3 +135,9 @@ body {
     }
   }
   /**/
+.video-lesson {
+  object-fit: scale-down;
+  width: 600px;
+  height: 400px;
+}
+

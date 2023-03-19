@@ -826,7 +826,182 @@ export const courseList = {
     ]
   };
   
-  export const courseId={
+  export const courseId=[
+    {
+        "id": "f58ff842-2d2b-4f24-9a4b-c6f6e1fd866e",
+        "title": "Win Your Emotional Battle Against Procrastination",
+        "tags": [
+            "productivity"
+        ],
+        "launchDate": "2023-03-06T16:13:29.000Z",
+        "status": "launched",
+        "description": "Learn to manage negative emotions that make you put things off.",
+        "duration": 568,
+        "previewImageLink": "https://wisey.app/assets/images/web/course-covers/Win-your-emotional-battle-against-procrastination",
+        "rating": 3.5,
+        "meta": {
+            "slug": "Win-your-emotional-battle-against-procrastination",
+            "skills": [
+                "Eliminating boredom",
+                "Overcoming the fear of failure",
+                "Dealing with uncertainty",
+                "Managing feelings of guilt",
+                "Recognizing your emotions"
+            ],
+            "courseVideoPreview": {
+                "link": "https://wisey.app/videos/Win-your-emotional-battle-against-procrastination/preview/AppleHLS1/preview.m3u8",
+                "duration": 17,
+                "previewImageLink": "https://wisey.app/assets/images/web/course-covers/Win-your-emotional-battle-against-procrastination/preview"
+            }
+        },
+        "lessons": [
+            {
+                "id": "7c8f20d8-8692-4810-bb25-f2be531c1bdc",
+                "title": "Fear of the unknown",
+                "duration": 286,
+                "order": 3,
+                "type": "video",
+                "status": "locked",
+                "link": "https://wisey.app/videos/Win-your-emotional-battle-against-procrastination/lesson-3/AppleHLS1/lesson-3.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/Win-your-emotional-battle-against-procrastination/lesson-3",
+                "meta": null
+            },
+            {
+                "id": "060d1660-179d-466c-9ec3-c3dd9df47cf6",
+                "title": "Fear of failure",
+                "duration": 275,
+                "order": 4,
+                "type": "video",
+                "status": "locked",
+                "link": "https://wisey.app/videos/Win-your-emotional-battle-against-procrastination/lesson-4/AppleHLS1/lesson-4.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/Win-your-emotional-battle-against-procrastination/lesson-4",
+                "meta": null
+            },
+            {
+                "id": "94d5890e-db6c-4b62-9e1e-ee5b7448ab93",
+                "title": "Boredom",
+                "duration": 247,
+                "order": 5,
+                "type": "video",
+                "status": "locked",
+                "link": "https://wisey.app/videos/Win-your-emotional-battle-against-procrastination/lesson-5/AppleHLS1/lesson-5.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/Win-your-emotional-battle-against-procrastination/lesson-5",
+                "meta": null
+            },
+            {
+                "id": "30ddb60b-712f-4a05-9439-f44c5e3d680f",
+                "title": "Procrastination cycle",
+                "duration": 272,
+                "order": 1,
+                "type": "video",
+                "status": "unlocked",
+                "link": "https://wisey.app/videos/Win-your-emotional-battle-against-procrastination/lesson-1/AppleHLS1/lesson-1.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/Win-your-emotional-battle-against-procrastination/lesson-1",
+                "meta": null
+            },
+            {
+                "id": "cc8de864-6a2d-48bd-aea5-097b1a8e3524",
+                "title": "Guilt & self-blame",
+                "duration": 296,
+                "order": 2,
+                "type": "video",
+                "status": "unlocked",
+                "link": "https://wisey.app/videos/Win-your-emotional-battle-against-procrastination/lesson-2/AppleHLS1/lesson-2.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/Win-your-emotional-battle-against-procrastination/lesson-2",
+                "meta": null
+            }
+        ],
+        "containsLockedLessons": true
+    }
+    ,
+    {
+        "id": "3b77ceb6-fb43-4cf5-a25b-8fe9222a0714",
+        "title": "The Power of Self-Discipline: How to Stay on Track",
+        "tags": [
+            "productivity"
+        ],
+        "launchDate": "2023-03-06T16:25:24.000Z",
+        "status": "launched",
+        "description": "Find the inner strength to overcome procrastination and reach your goals.",
+        "duration": 509,
+        "previewImageLink": "https://wisey.app/assets/images/web/course-covers/the-power-of-self-discipline-how-to-stay-on-track",
+        "rating": 3.5,
+        "meta": {
+            "slug": "the-power-of-self-discipline-how-to-stay-on-track",
+            "skills": [
+                "Increasing self-awareness",
+                "Personal accountability",
+                "Developing a routine",
+                "Improving self-control",
+                "Focusing on long-term goals"
+            ],
+            "courseVideoPreview": {
+                "link": "https://wisey.app/videos/the-power-of-self-discipline-how-to-stay-on-track/preview/AppleHLS1/preview.m3u8",
+                "duration": 19,
+                "previewImageLink": "https://wisey.app/assets/images/web/course-covers/the-power-of-self-discipline-how-to-stay-on-track/preview"
+            }
+        },
+        "lessons": [
+            {
+                "id": "b9ad7391-0f0b-4fe1-b919-6525d76ad3c4",
+                "title": "Why short-term gains aren’t worth it",
+                "duration": 229,
+                "order": 1,
+                "type": "video",
+                "status": "unlocked",
+                "link": "https://wisey.app/videos/the-power-of-self-discipline-how-to-stay-on-track/lesson-1/AppleHLS1/lesson-1.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/the-power-of-self-discipline-how-to-stay-on-track/lesson-1",
+                "meta": null
+            },
+            {
+                "id": "150d6b43-7a39-4a8f-b693-b3c519d62ee6",
+                "title": "Exercise your self-control",
+                "duration": 280,
+                "order": 2,
+                "type": "video",
+                "status": "unlocked",
+                "link": "https://wisey.app/videos/the-power-of-self-discipline-how-to-stay-on-track/lesson-2/AppleHLS1/lesson-2.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/the-power-of-self-discipline-how-to-stay-on-track/lesson-2",
+                "meta": null
+            },
+            {
+                "id": "aadd36f4-bf23-4f86-a6b2-767525d38989",
+                "title": "Why we need routine",
+                "duration": 282,
+                "order": 3,
+                "type": "video",
+                "status": "locked",
+                "link": "https://wisey.app/videos/the-power-of-self-discipline-how-to-stay-on-track/lesson-3/AppleHLS1/lesson-3.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/the-power-of-self-discipline-how-to-stay-on-track/lesson-3",
+                "meta": null
+            },
+            {
+                "id": "b311d60d-652c-4fbf-b687-d43004c98342",
+                "title": "Become personally accountable",
+                "duration": 276,
+                "order": 4,
+                "type": "video",
+                "status": "locked",
+                "link": "https://wisey.app/videos/the-power-of-self-discipline-how-to-stay-on-track/lesson-4/AppleHLS1/lesson-4.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/the-power-of-self-discipline-how-to-stay-on-track/lesson-4",
+                "meta": null
+            },
+            {
+                "id": "f5b9b0aa-baa6-4218-b16c-46152bd9b505",
+                "title": "Develop self-awareness",
+                "duration": 302,
+                "order": 5,
+                "type": "video",
+                "status": "locked",
+                "link": "https://wisey.app/videos/the-power-of-self-discipline-how-to-stay-on-track/lesson-5/AppleHLS1/lesson-5.m3u8",
+                "previewImageLink": "https://wisey.app/assets/images/web/lessons-covers/the-power-of-self-discipline-how-to-stay-on-track/lesson-5",
+                "meta": null
+            }
+        ],
+        "containsLockedLessons": true
+    }
+    ,
+    {
       "id": "352be3c6-848b-4c19-9e7d-54fe68fef183",
       "title": "Lack of Motivation & How to Overcome It",
       "tags": [
@@ -911,6 +1086,7 @@ export const courseList = {
           }
       ],
       "containsLockedLessons": true
-  };
+  }
+];
 
 //export default {courseList, courseId};
