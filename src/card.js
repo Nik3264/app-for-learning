@@ -1,6 +1,7 @@
 export default function renderCard(listCard, domContent, count) {
     domContent.innerHTML = "";
     const listCardCount=listCard.slice(0,count);
+
     listCardCount.forEach((course, id) => {
       domContent.innerHTML += `
         <div id=${id} class="course-wrap">
@@ -9,10 +10,13 @@ export default function renderCard(listCard, domContent, count) {
             </header>
             <img class="course-img" src="${course.previewImageLink+'/cover.webp'}" alt="">
             <p class="course-description">${course.description}</p>
-            <a href="#" class="course-email">${course.duration}</a>
-            <a href="#" class="course-tel">${course.lessonsCount}</a>
-            <footer class="course-gender">
-                <h4>course.meta.courseVideoPreview.link</h4>
+            <ul class="course-skills">${course.meta.skills.map((skill)=>{
+              return `<li>${skill}</li>
+              `;
+            }).join('')}</ul>            
+            <footer class="course-footer">
+              <div class="topic ${course.tags}">${course.tags}</div>
+              <div class="rating">[${course.rating}]</div>
             </footer>
         </div>
       `;

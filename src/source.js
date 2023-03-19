@@ -826,7 +826,7 @@ export const courseList = {
     ]
   };
   
-  export const courseId=[
+export const courseId=[
     {
         "id": "f58ff842-2d2b-4f24-9a4b-c6f6e1fd866e",
         "title": "Win Your Emotional Battle Against Procrastination",
@@ -1089,4 +1089,6 @@ export const courseList = {
   }
 ];
 
+export const url =  'https://api.wisey.app/api/v1/core/preview-courses';
+export const url1 = "https://api.wisey.app/api/v1/auth/anonymous?platform=subscriptions";
 //export default {courseList, courseId};

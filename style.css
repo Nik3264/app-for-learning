@@ -6,11 +6,12 @@ body {
 
 * {
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+/*   font-family: 'Rubik Mono One', sans-serif; */
 }
 
 .header {
-  padding-left: 2%;
-
+  padding-left: 2%;  
 }
 
 :root {
@@ -19,6 +20,8 @@ body {
     --carrot: rgba(228, 135, 22, 1);
     --light-carrot: rgba(250, 171, 1, 0.8);
     --sand: rgba(223, 188, 178, 0.8);
+    --orang:#e9572d;
+    --blue:#00a69a;
 }
 
 .content {
@@ -30,7 +33,7 @@ body {
     justify-content: space-evenly;
     align-items: flex-start;
     align-content: space-evenly;
-    background-color: var(--light-green);
+    background-color: rgba(201, 212, 108, 0.3);
   }
   
 
@@ -39,7 +42,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 30%;
-    height: 300px;
+    height: 550px;
     overflow: hidden;
     border-radius: 5%;
     box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5);
@@ -55,6 +58,7 @@ body {
 
   .course-wrap:hover {
     cursor: pointer;
+    box-shadow: 3px 7px 7px rgba(0, 0, 0, 0.5), 5px 10px 10px rgba(233,87,45, 0.4);
   }
   
   .course-wrap:active {
@@ -63,11 +67,13 @@ body {
 
   .course-header {
     width: 100%;
-    height: 12%;
+    height: 15%;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 1.1em;
     background-color: var(--green);
     color: white;
-    text-align: center;
-    font-size: 0.8em;
+
   }
   
   .course-header h3 {
@@ -84,6 +90,11 @@ body {
 
   .course-description {
     padding: 10px;
+    font-weight: bold;
+  }
+
+  .course-skills {
+    padding: 10px;
   }
 
   .button-more, .go-to-main {
@@ -94,7 +105,7 @@ body {
     border: none;
   }
 
-  .button-more:hover, .go-to-main:hover {
+  .button-more:hover, .go-to-main:hover, .unlocked {
     cursor: pointer;
     color:var(--green);
   }
@@ -141,3 +152,71 @@ body {
   height: 400px;
 }
 
+.course-footer {
+  position: relative;
+  width: 90%;
+  margin: 8px 0;
+  padding-top: 10px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.topic {
+  position: absolute;
+  left:5px;
+  bottom:5px;
+  padding: 2px 5px;
+  color:var(--orang);
+  border-radius:5px;
+  border:1px solid var(--orang);
+}
+
+.communication {
+  color:var(--blue);
+  border:1px solid var(--blue);
+}
+
+.productivity {
+  color:var(--orang);
+  border:1px solid var(--orang);
+}
+
+.psychology {
+  color:var(--green);
+  border:1px solid var(--green);
+}
+
+.ability {
+  color:rgb(66,66,148);
+  border:1px solid rgb(66,66,148)
+}
+
+.rating {
+  position: absolute;
+  right:5px;
+  bottom:5px;
+  color:rgba(0, 0, 0, 0.5);
+}
+
+.rating::before {
+  position: absolute;
+  color: var(--orang);
+  content: '\2606' /*"•"*/;
+  padding-right: 5px;
+  font-size: 2em;
+  left: -31px;
+  bottom: -9px;
+}
+
+.course-skills li {
+  list-style-type: none; 
+  padding: 2px 7px;
+}
+
+.course-skills li:before {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   color: var(--blue);
+   content: '\2742' /*"•"*/;
+   padding-right: 5px; 
+}
